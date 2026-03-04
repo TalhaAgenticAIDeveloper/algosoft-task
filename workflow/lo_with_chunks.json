@@ -1,0 +1,360 @@
+[
+  {
+    "lo_id": "6.5.3.1.1",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Universe and the Solar System",
+    "description": "Describing the changes in the apearance of the mon during its revolution around the Earth and identifying the phenomena asociated with that.",
+    "chunks": [
+      "c25",
+      "c118",
+      "c39"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.1.2",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Universe and the Solar System",
+    "description": "Explaing the phenomena related to the movement of the earth, the mon and the sun and the resulting changes.",
+    "chunks": [
+      "c118",
+      "c24",
+      "c28"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.1.3",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Universe and the Solar System",
+    "description": "Concluding the efect of gravity on the movement of the solar system, galaxies and asociated phenomena.",
+    "chunks": [
+      "c29",
+      "c31"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.1.4",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Universe and the Solar System",
+    "description": "Determing the characteristics of the solar system, and comparing the solar system to the galaxy and the universe.",
+    "chunks": [
+      "c71",
+      "c87",
+      "c38"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.1.1",
+    "domain": "Life Sciences",
+    "subdomain": "Structure and Function in Living Organisms",
+    "description": "Describing the cel structures and linking them to their vital functions.",
+    "chunks": [
+      "c108",
+      "c111",
+      "c77"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.1.3",
+    "domain": "Life Sciences",
+    "subdomain": "Structure and Function in Living Organisms",
+    "description": "Identifying the main body systems and their specialized organs and linking them to their functions that suports growth and survival of living organisms (plants and animals).",
+    "chunks": [
+      "c16",
+      "c22",
+      "c17"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.1.2",
+    "domain": "Life Sciences",
+    "subdomain": "Structure and Function in Living Organisms",
+    "description": "Identifying the major structural and functional diferences betwen animal and plant cels.",
+    "chunks": [
+      "c22",
+      "c19",
+      "c60"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.1.4",
+    "domain": "Life Sciences",
+    "subdomain": "Structure and Function in Living Organisms",
+    "description": "Describing the diferent paterns in the life cycles of animals and plants and the changes acompanying them, and comparing them.",
+    "chunks": [
+      "c118",
+      "c60",
+      "c61"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.2.1",
+    "domain": "Life Sciences",
+    "subdomain": "Organization and Diversity of Living Organisms",
+    "description": "Clasifying living organisms into groups based on comon phenotypic traits.",
+    "chunks": [
+      "c61"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.3.4",
+    "domain": "Life Sciences",
+    "subdomain": "Ecosystems and Their Interactions",
+    "description": "Describing the efect of environmental changes on plants and animals that live in specific environments. Infering how behavioral and structural adaptations can help plants and animals survive in their habitats",
+    "chunks": [
+      "c118",
+      "c61",
+      "c25"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.3.1",
+    "domain": "Life Sciences",
+    "subdomain": "Ecosystems and Their Interactions",
+    "description": "Representing biological comunities and identifying types of population that lives in it, describing the interelationships among them, and their interaction with the abiotic components, and the impact of biological comunities changes on their survival and sustainability.",
+    "chunks": [
+      "c61",
+      "c118",
+      "c16"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.3.2",
+    "domain": "Life Sciences",
+    "subdomain": "Ecosystems and Their Interactions",
+    "description": "Describing the components of the ecosystem and explaing the impact of the availability of diferent resources in ecosystems on the survival and sustainability of living organisms, and proposing solutions to problems that afect the stability of the ecosystem.",
+    "chunks": [
+      "c17",
+      "c16",
+      "c22"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.3.3",
+    "domain": "Life Sciences",
+    "subdomain": "Ecosystems and Their Interactions",
+    "description": "Representing the relationships betwen living organisms in which mater is circulated in the ecosystem, and identifying the relationship betwen plants and energy obtained from the sun to produce fod.",
+    "chunks": [
+      "c16",
+      "c61",
+      "c17"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.3.5",
+    "domain": "Life Sciences",
+    "subdomain": "Ecosystems and Their Interactions",
+    "description": "Infering the efects of human activity on environmental habitats and populations, and predicting its impact, proposing solutions to protect them.",
+    "chunks": [
+      "c118"
+    ]
+  },
+  {
+    "lo_id": "6.5.1.4.1",
+    "domain": "Life Sciences",
+    "subdomain": "Genetics",
+    "description": "Identifying the inheritance of traits, explaing the variation in them, tracing their transmision from one generation to the next, distinguishing their types (dominant and recesive), and clarifying the impact of the environment on them.",
+    "chunks": [
+      "c116",
+      "c61",
+      "c17"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.1.1",
+    "domain": "Physical Sciences",
+    "subdomain": "Matter and its Interactions",
+    "description": "Exploring the physical properties of mater, distinguishing the molecular structure of its diferent states, and explaing the change of mater states due to heat.",
+    "chunks": [
+      "c39",
+      "c40",
+      "c95"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.1.2",
+    "domain": "Physical Sciences",
+    "subdomain": "Matter and its Interactions",
+    "description": "Understanding the chemical changes of mater, clarifying the concepts and methods related to it, and comparing mas of diferent maters when their properties change based on the law of conservation of mas.",
+    "chunks": [
+      "c25",
+      "c39",
+      "c41"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.1.3",
+    "domain": "Physical Sciences",
+    "subdomain": "Matter and its Interactions",
+    "description": "Understanding chemical reactions, the indicators of their ocurence, types, and factors afecting their reaction rate.",
+    "chunks": [
+      "c112",
+      "c41",
+      "c106"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.1.4",
+    "domain": "Physical Sciences",
+    "subdomain": "Matter and its Interactions",
+    "description": "Exploring the chemical properties of materials, and distinguishing betwen the interactions of acids and bases, their chemical properties, and their uses.",
+    "chunks": [
+      "c95",
+      "c25",
+      "c91"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.2.1",
+    "domain": "Physical Sciences",
+    "subdomain": "Motion and Forces",
+    "description": "Describing the efect of force on objects, and distinguishing types of forces",
+    "chunks": [
+      "c38",
+      "c27",
+      "c41"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.2.3",
+    "domain": "Physical Sciences",
+    "subdomain": "Motion and Forces",
+    "description": "Explaing the factors afecting types of forces, such as gravitational force, friction, and magnetism.",
+    "chunks": [
+      "c97",
+      "c38",
+      "c27"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.2.2",
+    "domain": "Physical Sciences",
+    "subdomain": "Motion and Forces",
+    "description": "Understanding Newton’s thre laws of motion and using them to explain body motion.",
+    "chunks": [
+      "c30",
+      "c38",
+      "c29"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.3.1",
+    "domain": "Physical Sciences",
+    "subdomain": "Energy",
+    "description": "Understanding the concept of energy and work, distinguishing betwen them, and giving real life examples.",
+    "chunks": [
+      "c16",
+      "c27",
+      "c25"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.3.2",
+    "domain": "Physical Sciences",
+    "subdomain": "Energy",
+    "description": "Understanding the principle of energy conservation during its transformations and aply it in daily life.",
+    "chunks": [
+      "c118",
+      "c16",
+      "c21"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.4.2",
+    "domain": "Physical Sciences",
+    "subdomain": "Waves and Vibrations",
+    "description": "Understanding the concepts of reflection and refraction of light, transmision of sound, and explaing their role interaction and comunication in the surounding environment.",
+    "chunks": [
+      "c44",
+      "c40",
+      "c39"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.4.1",
+    "domain": "Physical Sciences",
+    "subdomain": "Waves and Vibrations",
+    "description": "Describing waves, distinguishing betwen their properties theoreticaly and graphicaly, and predicting their movement.",
+    "chunks": [
+      "c39",
+      "c38",
+      "c40"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.5.1",
+    "domain": "Physical Sciences",
+    "subdomain": "Electromagnetism",
+    "description": "Understanding the concept of electric charge, explaining the attraction and repulsion of charged bodies, and comparing electrical circuits connected in series and in parallel.",
+    "chunks": [
+      "c50",
+      "c78",
+      "c97"
+    ]
+  },
+  {
+    "lo_id": "6.5.2.5.2",
+    "domain": "Physical Sciences",
+    "subdomain": "Electromagnetism",
+    "description": "Understanding the properties of magnets and their uses in daily life.",
+    "chunks": [
+      "c45",
+      "c97",
+      "c40"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.2.2",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Earth System",
+    "description": "Deducing the relationship of the Earth’s spheres to each other and predicting the interactions, and changes that ocur betwen them and the geological efects resulting from them.",
+    "chunks": [
+      "c26",
+      "c60",
+      "c118"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.2.1",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Earth System",
+    "description": "Clasifying the layers of the atmosphere and identifying their components, characteristics, changes, its efects on the environment and their benefits to humans.",
+    "chunks": [
+      "c38",
+      "c118",
+      "c87"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.2.3",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Earth System",
+    "description": "Describing the factors and proceses that afected the Earth’s surface which changed some of its features.",
+    "chunks": [
+      "c118",
+      "c60",
+      "c71"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.2.4",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Earth System",
+    "description": "Describing the types of rocks and their relationship to minerals and distinguishing their characteristics and uses.",
+    "chunks": [
+      "c60",
+      "c41",
+      "c26"
+    ]
+  },
+  {
+    "lo_id": "6.5.3.2.5",
+    "domain": "Earth and Space Sciences",
+    "subdomain": "The Earth System",
+    "description": "Determing the causes and efects of earthquakes and volcanoes and identifying the sites most vulnerable to earthquakes and volcanoes.",
+    "chunks": [
+      "c60",
+      "c41",
+      "c26"
+    ]
+  }
+]
