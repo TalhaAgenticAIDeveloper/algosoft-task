@@ -13,11 +13,6 @@ from fastapi.staticfiles import StaticFiles
 
 
 
-
-# app = FastAPI()
-# app.mount("/", StaticFiles(directory="static", html=True), name="static")
-# graph = build_graph()
-
 app = FastAPI()
 
 # Static files ko alag path par mount karo

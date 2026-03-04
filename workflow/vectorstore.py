@@ -25,7 +25,7 @@ metadatas = lo_data
 vectorstore = FAISS.from_texts(texts, embeddings, metadatas=metadatas)
 
 
-def search_los(query: str, k: int = 5):
+def search_los(query: str, k: int = 3):
     """
     Perform semantic search on LO descriptions
     """
