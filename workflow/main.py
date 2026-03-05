@@ -48,6 +48,11 @@ def answer(query: Query):
             "extracted_topics": [],
             "topic_matches": [],
             "grouped_los": {},
+            "selected_los": [],
+            "chunk_ids": [],
+            "chunk_contents": [],
+            "generated_assessment": "",
+            "last_assessment": "",
             "stage": "start"
         }
 
