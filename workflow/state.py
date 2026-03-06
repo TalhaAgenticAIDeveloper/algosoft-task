@@ -57,5 +57,11 @@ class AssessmentState(TypedDict):
     # The most recently generated assessment text
     generated_assessment: str
 
+    # All retrieved LOs (flat list) — used for pagination
+    all_retrieved_los: List[dict]
+
+    # Current page index for LO pagination (0-based)
+    lo_page_index: int
+
     # Persisted last assessment (for regeneration requests)
     last_assessment: str

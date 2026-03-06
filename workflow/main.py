@@ -53,6 +53,8 @@ def answer(query: Query):
             "chunk_contents": [],
             "generated_assessment": "",
             "last_assessment": "",
+            "all_retrieved_los": [],
+            "lo_page_index": 0,
             "stage": "start"
         }
 
