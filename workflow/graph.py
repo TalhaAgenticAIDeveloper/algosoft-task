@@ -39,6 +39,19 @@ load_dotenv()
 
 llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0.3)
 
+MAX_HISTORY = 10  # max recent messages to include in LLM context
+
+
+def _recent_history(messages: list, n: int = MAX_HISTORY) -> str:
+    """Format last n messages into a compact string for LLM context."""
+    recent = messages[-(n):] if len(messages) > n else messages
+    lines = []
+    for msg in recent:
+        role = "Teacher" if msg.type == "human" else "Agent"
+        lines.append(f"{role}: {msg.content[:300]}")
+    return "\n".join(lines)
+
+
 # ──────────────────────────────────────────────
 # Data files
 # ──────────────────────────────────────────────
@@ -147,7 +160,12 @@ def manager_agent(state: AssessmentState) -> dict:
 
     # ── General intent classification via LLM ───────────────
 
+    history = _recent_history(state.get("messages", []))
+
     prompt = f"""You are an intent classifier for an Assessment Creation Agent used by teachers.
+
+Recent conversation:
+{history}
 
 Classify the teacher message into exactly ONE of these labels:
 - greeting
@@ -199,12 +217,14 @@ Teacher message:
 
 def greeting_agent(state: AssessmentState) -> dict:
     """Responds to greetings / casual messages."""
+    history = _recent_history(state.get("messages", []))
     prompt = (
         "You are a helpful assistant for teachers who want to create assessments.\n"
         "Respond warmly to the teacher's greeting and briefly explain what you can do:\n"
         "- Help create assessments based on topics or Learning Outcomes.\n"
         "- Browse available curriculum Learning Outcomes.\n"
         "- Generate aligned assessments with MCQs, short & long questions.\n\n"
+        f"Recent conversation:\n{history}\n\n"
         f"Teacher said: \"{state['teacher_input']}\""
     )
     response = llm.invoke(prompt).content
@@ -221,8 +241,13 @@ def greeting_agent(state: AssessmentState) -> dict:
 
 def topic_extractor_agent(state: AssessmentState) -> dict:
     """Extracts discrete learning topics from free-text input."""
+    history = _recent_history(state.get("messages", []))
     prompt = f"""Extract the main learning / assessment topics from the teacher's message.
+Use the conversation history for context if the teacher refers to earlier topics.
 Return ONLY a comma-separated list of short topic phrases. No numbering, no explanation.
+
+Recent conversation:
+{history}
 
 Teacher message:
 \"{state['teacher_input']}\"
@@ -435,9 +460,16 @@ def assessment_generator_agent(state: AssessmentState) -> dict:
         if lo:
             lo_descriptions += f"- {lo_id}: {lo['description']}\n"
 
+    history = _recent_history(state.get("messages", []))
+    num_los = max(len(selected), 1)
+
     prompt = f"""You are an expert assessment creator for teachers.
 
-Using the learning content and Learning Outcomes below, create a comprehensive assessment.
+Using the learning content, Learning Outcomes, and any teacher preferences from the
+conversation history below, create a comprehensive assessment.
+
+Recent conversation:
+{history}
 
 **Selected Learning Outcomes:**
 {lo_descriptions}
@@ -446,13 +478,12 @@ Using the learning content and Learning Outcomes below, create a comprehensive a
 {content}
 
 **Assessment Requirements:**
-Include the following sections:
-1. Multiple Choice Questions (MCQs) — at least 5
-2. Short Answer Questions — at least 4
-3. Long Answer Questions — at least 2
-4. Application-Based Questions — at least 2
+Generate 1-2 questions per Learning Outcome across these sections:
+1. Multiple Choice Questions (MCQs)
+2. Short Answer Questions
+3. Long Answer / Application-Based Questions
 
-Each question must be clearly aligned with one or more of the selected Learning Outcomes.
+Group questions under their Domain → Subdomain → Learning Outcome.
 Label each question with the relevant LO ID(s).
 Provide an answer key at the end.
 """
